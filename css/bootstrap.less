@@ -1,0 +1,54 @@
+/*!
+ * Bootstrap @VERSION
+ *
+ * Copyright 2011 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ * Date: @DATE
+ */
+
+// CSS Reset
+@import "bootstrap/reset.less";
+
+// Core variables and mixins
+@import "variables.less";
+@import "bootstrap/mixins.less";
+
+// Grid system and page structure
+@import "bootstrap/scaffolding.less";
+
+// Styled patterns and elements
+@import "bootstrap/type.less";
+@import "bootstrap/forms.less";
+@import "bootstrap/tables.less";
+@import "bootstrap/patterns.less";
+
+html, body {
+	background-color:@grayLight;
+}
+
+body {
+  padding-top: 0px; 
+}
+.topbar.fill {
+//       .box-shadow();       
+// .gradientBar(@green, darken(@green, 90));
+}
+.content{
+margin-top:20px;
+//background-color:lighten(@baseColorL2,30%);
+.box-shadow();
+}
+.row{
+//background-color:@grayDark;
+padding:20px;
+}
+.p{
+color:@white;
+}
+.page-header{
+padding:10px;
+//background-color:@complementary1;
+}
