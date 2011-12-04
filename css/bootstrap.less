@@ -26,7 +26,7 @@
 @import "bootstrap/patterns.less";
 
 html, body {
-	background-color:@grayLight;
+	background-color:ligten(@grayLight, 10);
 }
 
 body {
@@ -39,7 +39,8 @@ body {
 .content{
   margin-top:20px;
   //background-color:lighten(@baseColorL2,30%);
-.box-shadow();
+  @shadow: inset 0 3px 3px rgba(0,0,0,.1), 0 1px 0px rgba(0,0,0,.4);
+.box-shadow(@shadow);
 }
 .row{
   //background-color:@grayDark;
