@@ -1786,20 +1786,30 @@ a.menu:after, .dropdown-toggle:after {
 }
 footer {
   margin-top: 35px;
-  padding-top: 35px;
-  border-top: 1px solid #eee;
-  background-color: #049cdb;
-  clear: both;
+  padding-top: 17px;
+  background-color: #990000;
+  color: #ffffff;
+  font-size: 40px;
+  background-color: #800000;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#990000), to(#800000));
+  background-image: -moz-linear-gradient(top, #990000, #800000);
+  background-image: -ms-linear-gradient(top, #990000, #800000);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #990000), color-stop(100%, #800000));
+  background-image: -webkit-linear-gradient(top, #990000, #800000);
+  background-image: -o-linear-gradient(top, #990000, #800000);
+  background-image: linear-gradient(top, #990000, #800000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#800000', GradientType=0);
 }
 .page-header {
   margin-bottom: 17px;
-  border-bottom: 1px solid #ddd;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 .page-header h1 {
   margin-bottom: 8px;
+  text-shadow: 1px 1px 0 #ffffff;
 }
 .btn.danger,
 .alert-message.danger,
@@ -2486,4 +2496,12 @@ body {
 }
 .page-header {
   padding: 10px;
+}
+#footertext1 {
+  color: #ffffff;
+  font-size: 20px;
+}
+.footertext2 {
+  color: #ffffff;
+  font-size: 15px;
 }

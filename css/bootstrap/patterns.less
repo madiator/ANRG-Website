@@ -487,11 +487,13 @@ a.menu:after,
 }
 footer {
   margin-top: 2*@baseline - 1;
-  padding-top: 2*@baseline - 1;
-  border-top: 1px solid #eee;
-  background-color: @blue;
+  padding-top: @baseline - 1;
+//border-top: 1px solid #000;
+  background-color: @cardinalDark;
   //min-height: 240px;
-  clear:both;
+  color: @white;
+  font-size: 40px;
+  #gradient > .vertical(@cardinalDark, darken(@cardinalDark,5));
 }
 
 
@@ -500,10 +502,11 @@ footer {
 
 .page-header {
   margin-bottom: @baseline - 1;
-  border-bottom: 1px solid #ddd;
+ // border-bottom: 1px solid #ddd;
   .box-shadow(0 1px 0 rgba(255,255,255,.5));
   h1 {
     margin-bottom: (@baseline / 2) - 1px;
+    text-shadow: 1px 1px 0 @white;
   }
 }
 
