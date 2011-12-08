@@ -117,8 +117,8 @@
 .topbar .fill {
   background-color: @black;
   #gradient > .vertical(lighten(@black, 30), @black);
-  @shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);
-  .box-shadow(@shadow);
+ // @shadow: 0 0px 10px rgba(55,55,55,0), inset 0 0px 0px rgba(55,55,55,0); //investigate
+ // .box-shadow(@shadow);
 }
 
 
@@ -486,7 +486,8 @@ a.menu:after,
   }
 }
 footer {
-  margin-top: 2*@baseline - 1;
+  margin-top: 0px; //2*@baseline - 1;
+  margin-bottom: 0px;
   padding-top: @baseline - 1;
 //border-top: 1px solid #000;
   background-color: @cardinalDark;
@@ -494,6 +495,8 @@ footer {
   color: @white;
   font-size: 40px;
   #gradient > .vertical(@cardinalDark, darken(@cardinalDark,5));
+  @shadow: inset 0 0px 1px rgba(0,0,0,1), 0 -5px 10px rgba(0,0,0,.4);
+  .box-shadow(@shadow);
 }
 
 
